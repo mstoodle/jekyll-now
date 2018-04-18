@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ask the OpenJ9 Community weekly call
+title: Ask the OpenJ9 Community!
 ---
 
 Every Wednesday at 11am EST, a few members of the Eclipse OpenJ9 developer community
@@ -32,6 +32,11 @@ to understand where this new open source JVM technology is going, or if you want
 more about some particular feature of Eclipse OpenJ9 (like OpenJ9's lower footprint, or faster
 start-up, or how our dynamic AOT compiled code works, or our powerful tracing and diagnostic
 options), please feel free to join us at our weekly hangout. Everyone is welcome!
+
+I will be kicking off this week's call with 5-10 minutes talking about the OpenJ9 JIT
+verbose log, and how to use it to understand what methods are being compiled by the
+OpenJ9 JIT. It will be recorded, but it's even easier to ask questions if you attend
+in person :) .
 
 For details on how to join, which is usually posted a few minutes ahead of each meeting,
 please see the #planning channel in our slack instance. Not on our slack community yet?
