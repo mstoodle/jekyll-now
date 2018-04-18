@@ -3,8 +3,6 @@ layout: post
 title: "Ask the OpenJ9 Community" call - every week!
 ---
 
-# Ask the OpenJ9 Community call!
-
 Every Wednesday at 11am EST, a few members of the Eclipse OpenJ9 developer community
 (some days more, some days fewer) get together for about a half hour to discuss topics
 of relevance for OpenJ9 users and for the OpenJ9 project. We usually meet via a Zoom
