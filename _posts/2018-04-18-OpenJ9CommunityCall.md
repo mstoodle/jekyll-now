@@ -1,3 +1,8 @@
+---
+layout: post
+title: "Ask the OpenJ9 Community" call - every week!
+---
+
 # Ask the OpenJ9 Community call!
 
 Every Wednesday at 11am EST, a few members of the Eclipse OpenJ9 developer community
