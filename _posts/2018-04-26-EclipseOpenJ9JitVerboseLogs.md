@@ -281,3 +281,4 @@ You can check it out on Youtube if you'd like (about 14 minutes):
 *written by:*
 
 *Mark Stoodley, an Eclipse OpenJ9 project lead (Twitter: @mstoodle)*
+with grateful credit to *Sue Chaplain* for transcribing the demo and polishing the text.
