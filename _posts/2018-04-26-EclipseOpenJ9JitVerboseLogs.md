@@ -278,7 +278,6 @@ I recently did a live demo covering the information in this article as part of t
 You can check it out on Youtube if you'd like (about 14 minutes):
 [Eclipse OpenJ9: verbose JIT "lightning" talk](https://youtu.be/v2Q7joRoH9g ).
 
-*written by:*
+## Acknowledgements
 
-*Mark Stoodley, an Eclipse OpenJ9 project lead (Twitter: @mstoodle)*
-with grateful credit to *Sue Chaplain* for transcribing the demo and polishing the text.
+I'd like to thank *Sue Chaplain* for transcribing the demo and polishing the text to help create this post. Thanks, Sue!
