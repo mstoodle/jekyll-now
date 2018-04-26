@@ -42,11 +42,13 @@ scheduled for a *scorching* compilation. However, before that happens the method
 profiling* and allowed to run for a short time to collect detailed profile data that is then used by the *scorching*
 compilation.
 
-When the JIT begins to compile a method *M*, one important analysis it performs is method inlining, which brings the bytecodes of methods called by *M* into the body of *M* itself.
-When those methods are inlined, the JIT compiler can greatly improve the performance of the code. Not only is the overhead of the call operation itself eliminated but, even more
-importantly, the JIT's compiler can better optimize the operations performed by the inlined methods by taking advantage of the context under which those methods were called.
+When the JIT begins to compile a method, one important analysis it performs, which is important for this article, is method inlining. Inlining brings the bytecodes of methods
+called by a method *M* into the body of *M* itself.  When inlined, the JIT compiler can greatly improve the performance of the resulting code. Not only is the overhead of the
+call operation itself eliminated but, even more importantly, the JIT compiler can better optimize the operations performed by the inlined methods by taking advantage of the
+context under which those methods were called. For example, the compiler may be able to discover that one of the parameters to an inlined method was passed an argument with a
+constant value, or that the method is being called inside a loop leading to knowledge about the sequence of arguments that will be passed to the inlined method.
 
-In a verbose log you will see references to the optimization levels chosen for method compilation, but There are
+In a verbose log you will see references to the optimization levels chosen for method compilation, but there are
 a few other interesting labels that you may see in verbose logs. These other lagels describe additional JIT
 technologies and events that may happen because of the JIT compilation heuristics or the behaviour of the
 Java application. I'll talk more about these things in later articles, but here are some brief descriptions
