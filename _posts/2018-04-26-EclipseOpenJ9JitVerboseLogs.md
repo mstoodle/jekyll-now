@@ -29,9 +29,9 @@ Once a method has been compiled by the JIT, the VM can call the compiled method 
 
 The JIT compiler can compile a method at different optimization levels: *cold*, *warm*, *hot*,
 *very hot with profiling*, or *scorching*. The hotter the optimization level, the better the expected performance,
-but the higher the cost in terms of CPU and memory. In OpenJ9, all these optimization levels are
-implemented by the same JIT compiler technology. All that changes is the types and sequence of optimizations
-that will be performed.
+but the higher the cost in terms of CPU and memory. OpenJ9 implements these different optimization levels
+by changing the sequence and types of optimizations that will be performed: higher optimization levels will
+perform more optimizations and employ more powerful analyses.
 
 - *cold* is used during startup processing for large applications where the goal is to achieve the compiled code speed for as many methods as possible as quickly as possible.
 - *warm* is the workhorse: after start-up, most methods are compiled at warm once they reach the *invocation threshold*.
