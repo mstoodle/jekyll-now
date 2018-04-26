@@ -280,4 +280,5 @@ You can check it out on Youtube if you'd like (about 14 minutes):
 
 ## Acknowledgements
 
-I'd like to thank *Sue Chaplain* for transcribing the demo and polishing the text to help create this post. Thanks, Sue!
+I'd like to thank *Sue Chaplain* for transcribing the demo and polishing the text to help create this post. Thanks, Sue! I would also like to thank
+*Dan Heidinga* for his great editing job to extract the verbose log talk from the OpenJ9 community call. Thanks, Dan!
