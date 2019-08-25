@@ -92,7 +92,10 @@ creates a function at run time that just returns the integer 3. One of the more 
 examples dynamically compiles and runs the Mandelbrot program. It's not that I think
 people would want to compile Mandelbrot dynmamically rather than statically or that it
 confers some advantage to do it dynamically: these are just code samples to show how the API
-works and how it can be used to compile not just trivial code examples.
+works and how it can be used to compile not just trivial code examples. There is a
+`Makefile` in the `jitbuilder/release/cpp` directory that shows you how to link the code
+together. Note the makefile assumes `libjitbuilder.a` is in that same directory (which it
+won't be because it is now generated under the `build/jitbuilder` directory).
 
 In  the next article, I'm going to cover the major parts of the JitBuilder API and explain
 how they are typically used.
