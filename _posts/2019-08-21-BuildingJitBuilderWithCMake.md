@@ -22,7 +22,7 @@ directions so they should really work anywhere the OMR project can run!
 
 The first step is simply to clone the Eclipse OMR repository from GitHub:
 
-```
+```sh
 $ git clone https://github.com/eclipse/omr
 ```
 
@@ -30,7 +30,7 @@ Once you have the project cloned, the next step is to set up the CMake configura
 process, which generates the Makefiles that will be used to actually build the project
 and the JitBuilder library. It's actually really easy to prepare to build with CMake:
 
-```
+```sh
 $ cd omr
 $ mkdir build
 $ cd build
@@ -46,7 +46,7 @@ Release versus Debug).
 The next step is to run `cmake`, which will do all the platform detection and configuration
 steps and generate the required makefiles:
 
-```
+```sh
 $ cmake .. -DOMR_COMPILER=1 -DOMR_TEST_COMPILER=1 -DOMR_JITBUILDER=1 -DCMAKE_BUILD_TYPE=Release
 ```
 
@@ -57,7 +57,7 @@ library so that JitBuilder compile times are as good as they can be.
 
 With that configuration completed, all that's left is to build the project:
 
-```
+```sh
 $ make -j<N>
 ```
 
@@ -89,9 +89,9 @@ Want to see some standalone examples for how the JitBuilder API can be used? We 
 code samples available in the `omr/jitbuilder/release/cpp/samples` directory that show
 how you can use JitBuilder from C++. The simplest one is called `Simple.cpp` which
 creates a function at run time that just returns the integer 3. One of the more complicated
-examples dynamically compiles and runs the Mandelbrot program. It's not that we think
+examples dynamically compiles and runs the Mandelbrot program. It's not that I think
 people would want to compile Mandelbrot dynmamically rather than statically or that it
-confers some advantage to do it dynamically: these are code samples to show how the API
+confers some advantage to do it dynamically: these are just code samples to show how the API
 works and how it can be used to compile not just trivial code examples.
 
 In  the next article, I'm going to cover the major parts of the JitBuilder API and explain
