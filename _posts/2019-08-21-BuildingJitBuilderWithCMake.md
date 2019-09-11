@@ -11,14 +11,18 @@ IBM SDK for Java.
 In my previous articles about JitBuilder, I've introduced the library and described how
 to build it from source.  The Eclipse OMR project, however, has since gone through a long,
 at times tortuous, process to migrate its build configuration management from an autotools
-based approach to use CMake[].  This article is not about the migration, but rather about
-how that migration impacted the steps to build thje JitBuilder library and find the build
+based approach to use CMake.  This article is not about the migration, but rather about
+how that migration impacted the steps to build the JitBuilder library and find the build
 artifacts it produces.
 
 I'm going to start from the very beginning and assume you don't even have the Eclipse OMR
 project on your system (what are you waiting for?!?). I'll give the directions required
 when I build it on MacOS but, as you'll see, there isn't anything MacOS-specific about the
 directions so they should really work anywhere the OMR project can run!
+
+Before we get started with the project, make sure you have `flex` (lexer generator) and 
+`bison` (parser generator) installed. These are dependencies which help us make sense 
+of the input source code.
 
 The first step is simply to clone the Eclipse OMR repository from GitHub:
 
