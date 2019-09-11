@@ -80,7 +80,7 @@ The JitBuilder static library itself can be found here: `omr/build/jitbuilder/li
 This library is the one you would link against your own code that makes calls into the
 JitBuilder API.
 
-How would your program know what calls it can makes? There are header files for that!
+How would your program know what calls it can make? There are header files for that!
 The JitBuilder header files can be found here: `omr/jitbuilder/release/cpp/include` .
 Why there? Well, historically and before we adopted CMake, the JitBuilder library would
 build itself into that `release` directory. We'll be moving those files into a more
@@ -94,7 +94,7 @@ code samples available in the `omr/jitbuilder/release/cpp/samples` directory tha
 how you can use JitBuilder from C++. The simplest one is called `Simple.cpp` which
 creates a function at run time that just returns the integer 3. One of the more complicated
 examples dynamically compiles and runs the Mandelbrot program. It's not that I think
-people would want to compile Mandelbrot dynmamically rather than statically or that it
+people would want to compile Mandelbrot dynamically rather than statically or that it
 confers some advantage to do it dynamically: these are just code samples to show how the API
 works and how it can be used to compile not just trivial code examples. There is a
 `Makefile` in the `jitbuilder/release/cpp` directory that shows you how to link the code
