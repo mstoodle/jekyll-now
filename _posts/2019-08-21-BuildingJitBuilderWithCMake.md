@@ -20,7 +20,7 @@ project on your system (what are you waiting for?!?). I'll give the directions r
 when I build it on MacOS but, as you'll see, there isn't anything MacOS-specific about the
 directions so they should really work anywhere the OMR project can run!
 
-Before we get started with the project, make sure you have `flex` (lexer generator) and 
+Before we proceed, make sure you have `flex` (lexer generator) and 
 `bison` (parser generator) installed. These are dependencies which help us make sense 
 of the input source code.
 
