@@ -11,14 +11,18 @@ IBM SDK for Java.
 In my previous articles about JitBuilder, I've introduced the library and described how
 to build it from source.  The Eclipse OMR project, however, has since gone through a long,
 at times tortuous, process to migrate its build configuration management from an autotools
-based approach to use CMake[].  This article is not about the migration, but rather about
-how that migration impacted the steps to build thje JitBuilder library and find the build
+based approach to use CMake.  This article is not about the migration, but rather about
+how that migration impacted the steps to build the JitBuilder library and find the build
 artifacts it produces.
 
 I'm going to start from the very beginning and assume you don't even have the Eclipse OMR
 project on your system (what are you waiting for?!?). I'll give the directions required
 when I build it on MacOS but, as you'll see, there isn't anything MacOS-specific about the
 directions so they should really work anywhere the OMR project can run!
+
+Before we proceed, make sure you have `flex` (lexer generator) and 
+`bison` (parser generator) installed. These are dependencies which help us make sense 
+of the input source code.
 
 The first step is simply to clone the Eclipse OMR repository from GitHub:
 
@@ -76,7 +80,7 @@ The JitBuilder static library itself can be found here: `omr/build/jitbuilder/li
 This library is the one you would link against your own code that makes calls into the
 JitBuilder API.
 
-How would your program know what calls it can makes? There are header files for that!
+How would your program know what calls it can make? There are header files for that!
 The JitBuilder header files can be found here: `omr/jitbuilder/release/cpp/include` .
 Why there? Well, historically and before we adopted CMake, the JitBuilder library would
 build itself into that `release` directory. We'll be moving those files into a more
@@ -90,7 +94,7 @@ code samples available in the `omr/jitbuilder/release/cpp/samples` directory tha
 how you can use JitBuilder from C++. The simplest one is called `Simple.cpp` which
 creates a function at run time that just returns the integer 3. One of the more complicated
 examples dynamically compiles and runs the Mandelbrot program. It's not that I think
-people would want to compile Mandelbrot dynmamically rather than statically or that it
+people would want to compile Mandelbrot dynamically rather than statically or that it
 confers some advantage to do it dynamically: these are just code samples to show how the API
 works and how it can be used to compile not just trivial code examples. There is a
 `Makefile` in the `jitbuilder/release/cpp` directory that shows you how to link the code
