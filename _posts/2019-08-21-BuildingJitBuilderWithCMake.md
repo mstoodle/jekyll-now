@@ -103,3 +103,6 @@ won't be because it is now generated under the `build/jitbuilder` directory).
 
 In  the next article, I'm going to cover the major parts of the JitBuilder API and explain
 how they are typically used.
+
+Acknowledgements: Many thanks to Batyr Nuryyev who helped to correct some small mistakes
+in the article as well as pointing out the bison / flex dependency !
